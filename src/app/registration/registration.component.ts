@@ -10,7 +10,7 @@ export class RegistrationComponent implements OnInit {
   form = {
     firstName: '',
     lastName: '',
-    age: '',
+    aged: '',
     gender: ''
   };
   showSubmit = false;
