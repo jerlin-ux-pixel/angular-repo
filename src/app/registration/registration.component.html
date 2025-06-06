@@ -1,0 +1,21 @@
+<div class="form-container">
+    <h2>Registration Form</h2>
+    <label>First Name</label>
+    <input type="text" id="first" [(ngModel)]="form.firstName" appValidateInput type="text" (input)="onInputChange()" />
+    <br />
+  
+    <label>Last Name</label>
+    <input type="text" [(ngModel)]="form.lastName" appValidateInput type="text" (input)="onInputChange()" />
+    <br />
+  
+    <label>Age</label>
+    <input type="number" [(ngModel)]="form.age" appValidateInput type="number" (input)="onInputChange()" />
+    <br />
+  
+    <label>Gender</label>
+    <input type="radio" [(ngModel)]="form.gender" [value]="'Male'" (change)="onInputChange()" /> Male
+    <input type="radio" [(ngModel)]="form.gender" [value]="'Female'" (change)="onInputChange()" /> Female
+    <br />
+  
+    <button *ngIf="showSubmit">Submit</button>
+  </div>
