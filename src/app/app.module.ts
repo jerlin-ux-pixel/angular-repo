@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { ValidateInputDirective } from './validate-input.directive';
 import { FormsModule } from '@angular/forms';
+import { AuthComponent } from './auth/auth.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     RegistrationComponent,
-    ValidateInputDirective
+    ValidateInputDirective,
+    AuthComponent
   ],
   imports: [
     BrowserModule,
